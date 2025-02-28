@@ -1,54 +1,59 @@
-# Google Sheets Clone
+# Google Sheets-Like Web Application
 
-## Overview
-This project is a Google Sheets clone developed using React.js and Ant Design. The application provides an intuitive and functional spreadsheet experience similar to Google Sheets, allowing users to work with data, perform calculations, and apply various formatting options.
+## Project Overview
+This project is a web application designed to mimic the core functionalities and user interface of Google Sheets. The application enables users to perform data entry, apply basic formatting, and utilize essential mathematical and data quality functions. It aims to deliver a seamless, interactive experience similar to Google Sheets, focusing on usability, accuracy, and performance.
+
+## Goals
+- Create a spreadsheet interface with Google Sheets-like UI/UX.
+- Provide essential mathematical and data quality functions.
+- Ensure interactivity through features like drag-and-drop and cell dependency updates.
+- Offer additional functionalities such as saving/loading spreadsheets and data visualization for a comprehensive user experience.
+
+## Tech Stack
+
+### Frontend
+- **HTML, CSS, JavaScript**: Used for building the core structure, styling, and interactivity of the web application.
+- **React.js (Optional)**: For creating a dynamic and efficient UI, enabling real-time updates and component-based design.
+
+### Backend (Optional)
+- **Node.js**: Can be used for handling server-side logic and data persistence if required.
+- **LocalStorage**: Utilized for client-side storage of spreadsheets without requiring a backend.
+
+### Visualization
+- **Chart.js**: Integrated for data visualization to create charts and graphs.
 
 ## Features
-1. **Cell Editing and Navigation**
-   - Click on a cell to edit its content.
-   - Navigate through cells using arrow keys or mouse clicks.
 
-2. **Formatting Options**
-   - **Bold**: Make text bold.
-   - **Italics**: Italicize text.
-   - **Font Size**:
-     - Use a dropdown to select predefined font sizes.
-     - Increment or decrement font size using + and - buttons.
-   - **Font Color**:
-     - Select custom colors using a color picker.
-     - Apply colors to specific cell content.
+### Implemented Functionalities
 
-3. **Undo and Redo**
-   - Undo and redo changes, including text edits and formatting changes, to maintain version control of your data.
+#### Spreadsheet Interface:
+- Toolbar and formula bar resembling Google Sheets.
+- Interactive grid structure with editable cells.
+- Ability to add, delete, and resize rows/columns.
+- Drag-and-drop functionality for formulas and cell values.
 
-4. **Drag Handle for Selection and Autofill**
-   - Drag the handle in the bottom-right corner of a cell to copy or autofill data to adjacent cells.
+#### Mathematical Functions:
+- **SUM**: Calculates the sum of a range of cells.
+- **AVERAGE**: Calculates the average of a range of cells.
+- **MAX**: Returns the maximum value from a range of cells.
+- **MIN**: Returns the minimum value from a range of cells.
+- **COUNT**: Counts the number of cells containing numerical values.
 
-5. **Mathematical Functions**
-   - Support for commonly used functions:
-     - **SUM**: Calculates the sum of a range of cells.
-     - **AVERAGE**: Calculates the average of a range of cells.
-     - **MAX**: Returns the maximum value from a range of cells.
-     - **MIN**: Returns the minimum value from a range of cells.
-     - **COUNT**: Counts the number of cells containing numerical values.
-   - Enter functions directly into a cell (e.g., `=SUM(A1:A5)`) to calculate results dynamically.
+#### Data Quality Functions:
+- **TRIM**: Removes leading and trailing whitespace from a cell.
+- **UPPER**: Converts text in a cell to uppercase.
+- **LOWER**: Converts text in a cell to lowercase.
+- **REMOVE_DUPLICATES**: Removes duplicate rows from a selected range.
+- **FIND_AND_REPLACE**: Allows users to find and replace specific text within a range of cells.
 
-6. **Toolbar Integration**
-   - Easy access to formatting and functionality via a toolbar with icons and tooltips.
+#### Data Entry and Validation:
+- Supports numbers, text, and dates.
+- Basic validation for numeric cells.
 
-7. **Formula Parsing and Evaluation**
-   - Support for cell references in formulas.
-   - Automatically calculate and display results for supported functions.
-
-## Technologies Used
-1. **React.js**
-   - Core framework for building the user interface.
-   - Manages the component-based architecture for the spreadsheet application.
-2. **Ant Design**
-   - Provides a sleek and modern UI design for the application.
-   - Components such as buttons, tooltips, and input fields enhance usability and visual appeal.
-3. **CSS**
-   - Custom styles to ensure responsive design and handle spreadsheet-specific layouts.
+### Bonus Features
+- Save and load spreadsheets as **JSON/CSV** files.
+- Data visualization with graphs and charts.
+- Advanced formula support with **relative and absolute referencing**.
 
 ## Installation and Setup
 ### Prerequisites
